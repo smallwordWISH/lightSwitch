@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script type="text/javascript" src="js/script.js"></script>
   <title>Light Swith</title>
 </head>
 <body>
-  <img id="img" src="img/on.jpg"></img>
-  <div class="timer">5</div>
-  <button class="button">ON<br />-<br />OFF</button>
+  <div class="container">
+    <div class="content">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <img id="img" src="img/on.jpg"></img>
+        </div>
+        <div class="timer-system col-md-4">
+          <form class="form-inline">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="timer input-group-text">0</div>
+              </div>
+              <input id="text" class="form-control" type="text" placeholder="請輸入數字"></input>
+            </div>
+            <button id="timer-btn" class="btn btn-info">倒數開始</button>
+          </form>
+          <div class="switch">
+            <button class="button btn btn-info">ON<br />-<br />OFF</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
